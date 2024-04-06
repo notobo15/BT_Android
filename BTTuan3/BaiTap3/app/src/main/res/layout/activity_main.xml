@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:id="@+id/lnlRoot"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="20"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="193dp"
+            android:layout_weight="1"
+            android:text="Hello World, Radio Activity! "
+            android:textAlignment="center"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="Red"
+
+            android:background="#DD0D00" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:text="green"
+            android:textColor="@color/white"
+            android:background="#2EF700" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:layout_weight="1"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:text="blue"
+            android:background="#1A55BF" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="20dp"
+            android:textAlignment="center"
+            android:text="gray"
+            android:textColor="@color/white"
+            android:layout_weight="1"
+            android:background="#98999B" />
+
+    </LinearLayout>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rdbRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="35dp" />
+
+        <RadioButton
+            android:id="@+id/rdbGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="55dp"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:id="@+id/rdbBlue"
+            android:layout_marginStart="25dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <RadioButton
+            android:layout_marginStart="25dp"
+            android:id="@+id/rdbGray"
+            android:layout_marginEnd="-10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </RadioGroup>
+
+</LinearLayout>
